@@ -1,0 +1,20 @@
+[
+	{
+		"spawnTime": 0,
+		"driverOpts": {
+			"initialPosition": 100,
+			"initialVelocity": 0,
+			"desiredVelocity": 3.0,
+			"safeTimeHeadway": 3.3,
+			"maxAcceleration": 4.3,
+			"desiredDeceleration": 2.3,
+			"jamDistance": 1.5
+		},
+		"rogueBehaviour": []
+	},
+	{
+		"spawnTime": 20,
+		"driverOpts": "default",
+		"rogueBehaviour": []
+	}
+]
