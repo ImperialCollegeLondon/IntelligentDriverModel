@@ -1,28 +1,64 @@
 const CONFIG = {
 	TIME_STEP: 0.05,
 	CANVAS_CONFIG: {
-		CANVAS_ID: '',
+		CANVAS_ID: 'trafficSimulator',
 		CANVAS_WIDTH: 1500,
 		CANVAS_HEIGHT: 100,
 	},
 	MAX_ROAD_LENGTH: 1000,
-	DEFAULT_DRIVER_OPTS: {
-		initialPosition: 0.0,
-		initialVelocity: 0.0,
-		desiredVelocity: 13.4, /* 30mph in m/s */
-		safeTimeHeadway: 3.3, /* 3.3 s */
-		maxAcceleration: 4.3, /* 0-60mph in 8s */
-		desiredDeceleration: 2.3, /* 3mph in 1 s */
-		jamDistance: 1.5, /* 1.50 m */
+	
+	/* TODO: Set defaults */
+	VEHICLE_TYPE: {
+		VIRTUAL: 'virtual',
+		CAR: 'car',
+		VAN: 'van',
+		TRUCK: 'truck',
+		CUSTOM: 'custom'
+	},
+	DEFAULT_VEHICLE_OPTS: {
+		CAR: {
+			VEHICLE_LENGTH: [],
+			INITIAL_POSITION: 0,
+			INITIAL_VELOCITY: 0,
+			DESIRED_VELOCITY: [],
+			SAFE_TIME_HEADWAY: [],
+			MAX_ACCELERATION: [],
+			DESIRED_DECELERATION: [],
+			JAM_DISTANCE: [],
+			ACCELERATION_EXPONENT: []
+		},
+		VAN: {
+			VEHICLE_LENGTH: [],
+			INITIAL_POSITION: 0,
+			INITIAL_VELOCITY: 0,
+			DESIRED_VELOCITY: [],
+			SAFE_TIME_HEADWAY: [],
+			MAX_ACCELERATION: [],
+			DESIRED_DECELERATION: [],
+			JAM_DISTANCE: [],
+			ACCELERATION_EXPONENT: []
+		},
+		TRUCK: {
+			VEHICLE_LENGTH: [],
+			INITIAL_POSITION: 0,
+			INITIAL_VELOCITY: 0,
+			DESIRED_VELOCITY: [],
+			SAFE_TIME_HEADWAY: [],
+			MAX_ACCELERATION: [],
+			DESIRED_DECELERATION: [],
+			JAM_DISTANCE: [],
+			ACCELERATION_EXPONENT: []
+		}
 	},
 	BEHAVIOUR_TYPE: {
+		IS_SPAWNED: 'isSpawned',
 		DESIRED_VELOCITY: 'desiredVelocity',
 		SAFE_TIME_HEADWAY: 'safeTimeHeadway',
 		MAX_ACCELERATION: 'maxAcceleration',
 		DESIRED_DECELERATION: 'desiredDeceleration',
 		JAM_DISTANCE: 'jamDistance',
-		DRIVER_OPTS: 'resetDriverOpts'
-	}
+		ACCELERATION_EXPONENT: 'accelerationExponent'
+	},
 };
 
 module.exports = CONFIG;

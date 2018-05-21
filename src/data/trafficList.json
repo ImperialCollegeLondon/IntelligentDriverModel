@@ -1,20 +1,51 @@
 [
 	{
-		"spawnTime": 0,
-		"driverOpts": {
-			"initialPosition": 100,
-			"initialVelocity": 0,
-			"desiredVelocity": 3.0,
+		"vehicleType": "virtual",
+		"vehicleLength": 0,
+		"position": 200,
+		"velocity": 0,
+		"initialVehicleBehaviour": {
+			"desiredVelocity": 13.4,
 			"safeTimeHeadway": 3.3,
-			"maxAcceleration": 4.3,
-			"desiredDeceleration": 2.3,
-			"jamDistance": 1.5
+			"maxAcceleration": 3.4,
+			"desiredDeceleration": 1.5,
+			"jamDistance": 1.5,
+			"accelerationExponent": 4
 		},
-		"rogueBehaviour": []
-	},
-	{
-		"spawnTime": 20,
-		"driverOpts": "default",
-		"rogueBehaviour": []
+		"latentVehicleBehaviour": [
+			{
+				"implementTime": 0,
+				"behaviourOpts": [
+					{
+						"behaviourType": "isSpawned",
+						"newBehaviour": true
+					}
+				]
+			}
+		]
+	}, {
+		"vehicleType": "car",
+		"vehicleLength": 4.8,
+		"position": 0,
+		"velocity": 0,
+		"initialVehicleBehaviour": {
+			"desiredVelocity": 13.4,
+			"safeTimeHeadway": 4.3,
+			"maxAcceleration": 3.4,
+			"desiredDeceleration": 1.5,
+			"jamDistance": 1.5,
+			"accelerationExponent": 4
+		},
+		"latentVehicleBehaviour": [
+			{
+				"implementTime": 0,
+				"behaviourOpts": [
+					{
+						"behaviourType": "isSpawned",
+						"newBehaviour": true
+					}
+				]
+			}
+		]
 	}
 ]
