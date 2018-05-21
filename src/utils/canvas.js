@@ -30,7 +30,6 @@ class Canvas {
 	
 	renderVehicle(vehicle) {
 		if (vehicle.isSpawned === true && vehicle.isVirtual === false) {
-			
 			const position = vehicle.position;
 			const velocity = vehicle.velocity;
 			const x = (position / MAX_ROAD_LENGTH) * this.cc.width;

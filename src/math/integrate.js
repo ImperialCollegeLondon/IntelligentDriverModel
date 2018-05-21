@@ -101,8 +101,7 @@ class Integrate {
 		
 		const s = jamDistance + Math.max((safeTimeHeadway * velocity) + ((velocity * velocityDifference) / (2 * Math.sqrt(maxAcceleration * desiredDeceleration))), 0);
 		
-		const a = maxAcceleration * (1 - Math.pow(velocity / desiredVelocity, accelerationExponent) - Math.pow(s / positionDifference, 2));
-		return a;
+		return maxAcceleration * (1 - Math.pow(velocity / desiredVelocity, accelerationExponent) - Math.pow(s / positionDifference, 2));
 	}
 }
 

@@ -39,8 +39,8 @@
 		"initialVehicleBehaviour": {
 			"desiredVelocity": 13.4,
 			"safeTimeHeadway": 4.3,
-			"maxAcceleration": 3.4,
-			"desiredDeceleration": 2.3,
+			"maxAcceleration": 1.7,
+			"desiredDeceleration": 1.6,
 			"jamDistance": 1.5,
 			"accelerationExponent": 4
 		},

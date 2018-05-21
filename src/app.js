@@ -50,7 +50,6 @@ class App {
 	}
 	
 	onUpdate() {
-		
 		this.preUpdate();
 		
 		this.trafficList = this.integrate.timeStep(this.trafficList);
