@@ -56,9 +56,7 @@ class App {
 		this.trafficList = this.integrate.timeStep(this.trafficList);
 		this.simulationTime += this.dt;
 		
-		if(this.simulationTime < 20) {
-			window.requestAnimationFrame(this.onUpdateHandler);
-		}
+		window.requestAnimationFrame(this.onUpdateHandler);
 	}
 }
 

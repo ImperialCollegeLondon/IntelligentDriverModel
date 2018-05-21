@@ -1,8 +1,3 @@
-/*
-
-TODO: Bugfix - vehicles decelerating too quickly when coming to a stop
-
-*/
 class Integrate {
 	constructor(dt) {
 		this.dt = dt;
@@ -101,8 +96,8 @@ class Integrate {
 		
 		const { desiredVelocity, safeTimeHeadway, maxAcceleration, desiredDeceleration, jamDistance, accelerationExponent } = opts;
 		
-		const positionDifference = positionAhead - position;
-		const velocityDifference = velocityAhead - velocity;
+		const positionDifference = position - positionAhead;
+		const velocityDifference = velocity - velocityAhead;
 		
 		const s = jamDistance + Math.max((safeTimeHeadway * velocity) + ((velocity * velocityDifference) / (2 * Math.sqrt(maxAcceleration * desiredDeceleration))), 0);
 		

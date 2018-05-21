@@ -29,13 +29,13 @@ class Canvas {
 	}
 	
 	renderVehicle(vehicle) {
-		if (vehicle.isSpawned === true) {
+		if (vehicle.isSpawned === true && vehicle.isVirtual === false) {
 			
 			const position = vehicle.position;
 			const velocity = vehicle.velocity;
 			const x = (position / MAX_ROAD_LENGTH) * this.cc.width;
 			const y = this.cc.height / 2;
-			const radius = Math.max(velocity / 3, 2); /* Draws faster cars as being larger for visual effect */
+			const radius = Math.max(Math.sqrt(velocity), 2); /* Draws faster cars as being larger for visual effect */
 			const startAngle = 0;
 			const endAngle = 2 * Math.PI;
 		

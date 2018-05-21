@@ -8,7 +8,7 @@
 			"desiredVelocity": 13.4,
 			"safeTimeHeadway": 3.3,
 			"maxAcceleration": 3.4,
-			"desiredDeceleration": 1.5,
+			"desiredDeceleration": 2.3,
 			"jamDistance": 1.5,
 			"accelerationExponent": 4
 		},
@@ -19,6 +19,14 @@
 					{
 						"behaviourType": "isSpawned",
 						"newBehaviour": true
+					}
+				]
+			}, {
+				"implementTime": 40,
+				"behaviourOpts": [
+					{
+						"behaviourType": "isSpawned",
+						"newBehaviour": false
 					}
 				]
 			}
@@ -32,7 +40,7 @@
 			"desiredVelocity": 13.4,
 			"safeTimeHeadway": 4.3,
 			"maxAcceleration": 3.4,
-			"desiredDeceleration": 1.5,
+			"desiredDeceleration": 2.3,
 			"jamDistance": 1.5,
 			"accelerationExponent": 4
 		},
