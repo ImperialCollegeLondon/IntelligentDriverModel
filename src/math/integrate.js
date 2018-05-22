@@ -6,7 +6,7 @@ class Integrate {
 	timeStep(trafficList) {
 		let updatedPositionVelocityList = [];
 		let indexVehicle = -1;
-		let indexVehicleLeading = -1;
+		let indexVehicleLeading = -1; /* WARNING: This only works if trafficList is sorted by position */
 		
 		for (let vehicle of trafficList) {
 			indexVehicle += 1;
