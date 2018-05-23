@@ -8,14 +8,21 @@ const { TIME_STEP, MAX_SIMULATION_TIME, CANVAS_CONFIG } = require('./utils/confi
 const trafficList = require('./data/trafficList.json');
 
 class App {
-	constructor(trafficList, timeStep) {
+	constructor(trafficList, timeStep, maxSimulationTime, shouldOutputData) {
 		this.dt = timeStep;
+		this.maxSimulationTime = maxSimulationTime;
+		this.shouldOutputData = shouldOutputData;
 		
 		this.trafficList = [];
 		this.currentTick = -1;
 		this.integrate = new Integrate(this.dt);
-		//this.output = new WriteOutput();
-		this.cc = new Canvas(CANVAS_CONFIG.CANVAS_ID, CANVAS_CONFIG.CANVAS_WIDTH, CANVAS_CONFIG.CANVAS_HEIGHT);
+		this.isNode = (typeof setImmediate !== 'undefined') ? true : false; /* Detects runtime environment */
+		
+		if (this.isNode === true) {
+			this.output = new WriteOutput();
+		} else {
+			this.cc = new Canvas(CANVAS_CONFIG.CANVAS_ID, CANVAS_CONFIG.CANVAS_WIDTH, CANVAS_CONFIG.CANVAS_HEIGHT);
+		}
 		
 		this.setupHandlers()
 			.parseTrafficList(trafficList)
@@ -43,14 +50,14 @@ class App {
 	}
 	
 	preUpdate() {
-		if (typeof this.cc !== 'undefined') {
+		if (this.isNode === false) {
 			this.cc.newState(this.simulationTime);
 		}
 		
 		for (let vehicle of this.trafficList) {
 			vehicle.onTickHandler(this.simulationTime);
 			
-			if (typeof this.cc !== 'undefined') {
+			if (this.isNode === false) {
 				this.cc.renderVehicle(vehicle);
 			}
 		}
@@ -61,18 +68,36 @@ class App {
 		
 		this.trafficList = this.integrate.timeStep(this.trafficList);
 		
-		if (typeof this.output !== 'undefined') {
-			this.output.formatTimeStepLine(this.simulationTime, this.trafficList);
-		}
+		this.postUpdate();
 		
 		this.simulationTime += this.dt;
-		if (this.simulationTime <= MAX_SIMULATION_TIME) {
+		if (this.simulationTime <= this.maxSimulationTime) {
+			this.initNextTimeStep();
+		} else {
+			this.outputDataToFile();
+		}
+	}
+	
+	postUpdate() {
+		if (this.isNode === true && this.shouldOutputData === true) {
+			this.output.formatTimeStepLine(this.simulationTime, this.trafficList);
+		}
+	}
+	
+	outputDataToFile() {
+		if (this.isNode === true && this.shouldOutputData === true) {
+			this.output.save();
+		}
+	}
+	
+	initNextTimeStep() {
+		if (this.isNode === true) {
 			setImmediate(this.onUpdateHandler);
 		} else {
-			this.output.save();
+			window.requestAnimationFrame(this.onUpdateHandler);
 		}
 	}
 }
 
 /* App entry point */
-const app = new App(trafficList, TIME_STEP);
+const app = new App(trafficList, TIME_STEP, MAX_SIMULATION_TIME, false);

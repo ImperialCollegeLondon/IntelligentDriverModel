@@ -81,7 +81,7 @@ class Integrate {
 	
 	dxdt(velocity, opts) {
 		/* Zero velocity for virtual vehicle */
-		if (opts.isVirtual) {
+		if (opts.isVirtual === true) {
 			return 0;
 		}
 		
@@ -90,7 +90,7 @@ class Integrate {
 	
 	dvdt(position, velocity, positionAhead, velocityAhead, opts) {
 		/* Zero acceleration for virtual vehicle */
-		if (opts.isVirtual) {
+		if (opts.isVirtual === true) {
 			return 0;
 		}
 		
