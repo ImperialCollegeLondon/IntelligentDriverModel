@@ -14,8 +14,8 @@ class App {
 		this.trafficList = [];
 		this.currentTick = -1;
 		this.integrate = new Integrate(this.dt);
-		this.output = new WriteOutput();
-		// this.cc = new Canvas(CANVAS_CONFIG.CANVAS_ID, CANVAS_CONFIG.CANVAS_WIDTH, CANVAS_CONFIG.CANVAS_HEIGHT);
+		//this.output = new WriteOutput();
+		this.cc = new Canvas(CANVAS_CONFIG.CANVAS_ID, CANVAS_CONFIG.CANVAS_WIDTH, CANVAS_CONFIG.CANVAS_HEIGHT);
 		
 		this.setupHandlers()
 			.parseTrafficList(trafficList)
@@ -60,7 +60,10 @@ class App {
 		this.preUpdate();
 		
 		this.trafficList = this.integrate.timeStep(this.trafficList);
-		this.output.formatTimeStepLine(this.simulationTime, this.trafficList);
+		
+		if (typeof this.output !== 'undefined') {
+			this.output.formatTimeStepLine(this.simulationTime, this.trafficList);
+		}
 		
 		this.simulationTime += this.dt;
 		if (this.simulationTime <= MAX_SIMULATION_TIME) {
