@@ -1,0 +1,501 @@
+[{
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 450,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 2.5,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 438,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 426,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 414,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 402,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 390,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 378,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 366,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 354,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 342,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 330,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 318,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 306,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 294,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 282,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 270,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 258,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 246,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 234,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 222,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 210,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 198,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 186,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 174,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}, {
+	"vehicleType": "car",
+	"vehicleLength": 4.8,
+	"position": 162,
+	"velocity": 2.5,
+	"initialVehicleBehaviour": {
+		"desiredVelocity": 5.4,
+		"safeTimeHeadway": 2.3,
+		"maxAcceleration": 1.5,
+		"desiredDeceleration": 1.2,
+		"jamDistance": 1.5,
+		"accelerationExponent": 4
+	},
+	"latentVehicleBehaviour": [{
+		"implementTime": 0,
+		"behaviourOpts": [{
+			"behaviourType": "isSpawned",
+			"newBehaviour": true
+		}]
+	}]
+}]
