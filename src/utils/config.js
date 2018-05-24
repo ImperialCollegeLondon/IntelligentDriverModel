@@ -1,6 +1,6 @@
 const CONFIG = {
 	TIME_STEP: 0.1,
-	MAX_SIMULATION_TIME: 10,
+	MAX_SIMULATION_TIME: Infinity,
 	OUTPUT_FILE_DIRECTORY: './helpers/output/',
 	CANVAS_CONFIG: {
 		CANVAS_ID: 'trafficSimulator',
